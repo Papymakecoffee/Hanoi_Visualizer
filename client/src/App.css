@@ -5,4 +5,15 @@
 .tour {
   display: inline-block;
   vertical-align: top;
+  margin:0 40px;
+  width:200px;
+}
+
+@keyframes popup {
+  from { transform: translateX(0px); }
+  to   { transform: translateX(600px); }
+}
+
+.endMessage {
+  animation: popup 5s;
 }

@@ -8,6 +8,7 @@ export class ParamForm extends Component {
 
 	handleChange = (event) => {
 		this.setState({value: event.target.value});
+		this.props.change(event.target.value || 0);
 	}
 
 	handleSubmit = (event) => {
@@ -18,8 +19,8 @@ export class ParamForm extends Component {
 		return (
 			<form onSubmit={this.handleSubmit}>
 				<label>
-					Nomber of disks : 
-					<input type="number" value={this.state.value} onChange={this.handleChange} />
+					Number of disks : 
+					<input type="number" value={this.state.value} onChange={this.handleChange} min="0" max="10"/>
 				</label>
 				<input type="submit" value="Visualize !" />
 			</form>
