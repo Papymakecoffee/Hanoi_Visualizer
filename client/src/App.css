@@ -9,11 +9,11 @@
   width:200px;
 }
 
-@keyframes popup {
+/*@keyframes popup {
   from { transform: translateX(0px); }
   to   { transform: translateX(600px); }
 }
 
 .endMessage {
   animation: popup 5s;
-}
+}*/
